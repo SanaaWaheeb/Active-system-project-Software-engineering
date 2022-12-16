@@ -15,6 +15,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("project 251");
         System.out.println("taghreed hammad i hate 251");
+        System.out.println("waad firs lab is done :) ");
     }
     
 }
