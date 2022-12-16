@@ -16,6 +16,7 @@ public class Main {
         System.out.println("project 251");
         System.out.println("taghreed hammad i hate 251");
         System.out.println("waad firs lab is done :) ");
+        System.out.println("Esra = the coolest one ");
     }
     
 }
