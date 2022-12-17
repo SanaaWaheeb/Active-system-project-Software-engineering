@@ -17,6 +17,7 @@ public class Main {
         System.out.println("taghreed hammad i hate 251");
         System.out.println("waad firs lab is done :) ");
         System.out.println("Esra = the coolest one ");
+        System.out.println("Ftoon 'do u know who is Hamtaro?' ");
     }
     
 }
