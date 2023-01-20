@@ -79,7 +79,11 @@ public class Event {
     
     //method: search for event
     
-    
+    public static Event searchEvent(String search1) {
+        for (int i = 0; i < EventsAdded.size(); i++) {
+            if (EventsAdded.get(i).EventName.equals(search1)) {
+                return EventsAdded.get(i);}}
+        return null;}
     
     
     
