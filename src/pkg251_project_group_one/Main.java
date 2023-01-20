@@ -3,15 +3,10 @@
  */
 package pkg251_project_group_one;
 
-/**
- *
- * @author DELL
- */
+
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         System.out.println("Sanaa of course we will have fun with project 251");
         System.out.println("taghreed hammad i love 251");
