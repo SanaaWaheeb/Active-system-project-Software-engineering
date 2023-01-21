@@ -71,7 +71,7 @@ public class Event {
     
     
     
-    //method: delete event  
+    //method: delete event     
      public static String deleteEvent(String EventName) {
         Event eventDelete = searchEvent(EventName);
         if (EventsAdded.isEmpty()) {
@@ -82,7 +82,7 @@ public class Event {
         } else {
             return "Event Not Found";
         }
-    }
+    }   
     
     
     
