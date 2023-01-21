@@ -14,8 +14,8 @@ public class Aministrator extends User {
 
     //setters
     public static void setReportsFiles(ArrayList<Report> reportsFiles) {
-        Aministrator.reportsFiles = reportsFiles;
-    }
+        Aministrator.reportsFiles = reportsFiles;}
+    
 
     //getters
     public static ArrayList<Report> getReportsFiles() {
