@@ -9,10 +9,10 @@ public class Leader extends User {
     static ArrayList<Event> eventsAdded;
 
 //constructor
-    public Leader(String userName, String password, String lastName, String eamil) {
-        super(userName, password, lastName, eamil);
-        
+    public Leader(String userName, String password, String firstName, String middleName, String lastName, String eamil) {
+        super(userName, password, firstName, middleName, lastName, eamil);
     }
+  
     
     //getters
     public static ArrayList<Event> getEvents() {

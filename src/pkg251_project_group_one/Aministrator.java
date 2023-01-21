@@ -8,9 +8,11 @@ public class Aministrator extends User {
     static ArrayList<Report> reportsFiles;
 
     //constructor
-    public Aministrator(String userName, String password, String lastName, String eamil) {
-        super(userName, password, lastName, eamil);
+
+    public Aministrator(String userName, String password, String firstName, String middleName, String lastName, String eamil) {
+        super(userName, password, firstName, middleName, lastName, eamil);
     }
+   
 
     //setters
     public static void setReportsFiles(ArrayList<Report> reportsFiles) {

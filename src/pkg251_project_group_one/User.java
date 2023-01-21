@@ -6,16 +6,21 @@ public class User {
       //attributes
      private String userName;
      private String password;
+     private String firstName;
+     private String middleName;
      private String lastName;
      private String eamil;
 
      //constructor
-    public User(String userName, String password, String lastName, String eamil) {
+    public User(String userName, String password, String firstName, String middleName, String lastName, String eamil) {
         this.userName = userName;
         this.password = password;
+        this.firstName = firstName;
+        this.middleName = middleName;
         this.lastName = lastName;
         this.eamil = eamil;
-    }  
+    }
+     
        
     //getters
     public String getUserName() {
@@ -34,6 +39,15 @@ public class User {
         return eamil;
     }
     
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getMiddleName() {
+        return middleName;
+    }
+    
+    
    //setter
     public void setUserName(String userName) {
         this.userName = userName;
@@ -49,6 +63,14 @@ public class User {
 
     public void setEamil(String eamil) {
         this.eamil = eamil;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setMiddleName(String middleName) {
+        this.middleName = middleName;
     }
     
 }

@@ -12,12 +12,13 @@ public class Student extends User {
     public static ArrayList<Student> students = new ArrayList<>();
 
    //constructor
-    public Student(String department, String userName, String password, String lastName, String eamil) {
-        super(userName, password, lastName, eamil);
+    public Student(String department, EventRegistration EnrollEvent, String userName, String password, String firstName, String middleName, String lastName, String eamil) {
+        super(userName, password, firstName, middleName, lastName, eamil);
         this.department = department;
+        this.EnrollEvent = EnrollEvent;
     }
-   
-     //setters
+
+    //setters
     public void setDepartment(String department) {
         this.department = department;
     }
