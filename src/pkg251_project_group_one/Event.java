@@ -72,8 +72,17 @@ public class Event {
     
     
     //method: delete event 
-    
-    
+     public static String deleteEvent(String EventName) {
+        Event eventDelete = searchEvent(EventName);
+        if (EventsAdded.isEmpty()) {
+            return "There is no Events in the System";
+        } else if (eventDelete != null) {
+            EventsAdded.remove(eventDelete);
+            return "Event delete from system successfully";
+        } else {
+            return "Event Not Found";
+        }
+    }
     
     
     
