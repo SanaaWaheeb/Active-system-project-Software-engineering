@@ -99,11 +99,18 @@ public class Event {
     
     
      //method: show avaliable event
+       public static void showEvent() {
+        System.out.println("********************************************************************************************");
+        System.out.println("                             ***   FCIT Activities system   ***                             ");
+        System.out.println("********************************************************************************************");
+        for (int i = 0; i < EventsAdded.size(); i++) { 
+            System.out.println("Event Name: "+EventsAdded.get(i).getEventName()+" ,Date of Event:" 
+                    + EventsAdded.get(i).getDate() + " ,Number Of Seats:" 
+                    + EventsAdded.get(i).getNumberOfSeats()+
+                    " ,Description Of Event"+EventsAdded.get(i).getDescriptionOfEvent());}
+        System.out.println("*********************************************************************************************");}}
 
 
 
 
 
-
-
-}
