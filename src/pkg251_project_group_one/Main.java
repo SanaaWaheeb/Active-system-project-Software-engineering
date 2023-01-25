@@ -3,16 +3,15 @@
  */
 package pkg251_project_group_one;
 
-
 public class Main {
 
-
     public static void main(String[] args) {
-        System.out.println("Sanaa of course we will have fun with project 251");
-        System.out.println("taghreed hammad I love 251");
-        System.out.println("waad firs lab is done :) ");
-        System.out.println("Esra = the coolest one ");
-        System.out.println("Ftoon 'do u know who is Hamtaro?' ");
+
+        // create new leaders for the system
+        Leader leaderOfSocialCommittees = new Leader("hanaa", "251_beautiful", "dr. Hanaa", "Ahmed", "Alamodi", "hanaa@stu.kau.edu.sa");
+        Leader leaderOfIslamicCommittees = new Leader("fatama", "251_great", "dr. Fatama", "Mohammed", "Alrarhi", "Fatama@stu.kau.edu.sa");
+        Leader leaderOfCulturalCommittees = new Leader("doaa", "251_fun", "dr. Doaa", "Tamer", "Alhashdi", "doaa@stu.kau.edu.sa");
+        Leader leaderOfSportCommittees = new Leader("suaad", "251_nice", "dr. Suaad", "Ahmed", "Alshmrani", "suaad@stu.kau.edu.sa");
     }
-    
+
 }
