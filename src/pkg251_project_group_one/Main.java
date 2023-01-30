@@ -71,16 +71,38 @@ public class Main {
                             break;
                         
                         case 2:
-                        //delete event
-                          
+                        //we call method delete event
+                      
+                            System.out.print("Enter Event Name to delete it: ");
+                            System.out.println(Event.deleteEvent(input.next()));
+                            break;
                       
                         case 3:
-                        //show event
-                           
+                        //we call method show event
+                           Event.showEvent();
+                            break;
                          
                         case 4:
                         //Search for Event
-                      
+                            System.out.print("Enter Event name: ");
+                            String nameOfEvent = input.next();
+                              //search about event using name of event
+                            Event eventsearched = Event.searchEvent(nameOfEvent);
+                            //if the event dose not exit 
+                            if (eventsearched == null) {
+                                System.out.println("This Event Does Not Upload In System");
+                            }
+                            // print the information about existing Events in the system
+                            else 
+                            {System.out.println("*************************************************************************************************************");
+                             System.out.println("                                          FCIT Activities system                                          ");
+                             System.out.println("*************************************************************************************************************");
+                                System.out.println( "The Name Of Event is: " + eventsearched.getEventName() + ", Number of seats  are: "
+                                         + eventsearched.getNumberOfSeats() +", The Event Date is: " + eventsearched.getDate() 
+                                         + ", The Description Of Event is: "+eventsearched.getDescriptionOfEvent());
+                                System.out.println("****************************************************************************************************************");}
+                            break;
+
                             default:
                             break;}}
             
