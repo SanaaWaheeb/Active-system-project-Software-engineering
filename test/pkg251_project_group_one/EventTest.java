@@ -75,12 +75,11 @@ public class EventTest {
     //Waad
     public void testGetNumberOfSeats() {
         System.out.println("getNumberOfSeats");
-        Event instance = null;
-        int expResult = 0;
+        Event instance =new Event("protect your information ", "04:05:23", 30, " Lecture about how to be safe while doing online meetings ");;
+        int expResult = 30;
         int result = instance.getNumberOfSeats();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -149,11 +148,12 @@ public class EventTest {
     //Waad
     public void testSetNumberOfSeats() {
         System.out.println("setNumberOfSeats");
-        int NumberOfSeats = 0;
-        Event instance = null;
+        int NumberOfSeats = 20;
+        Event instance = new Event("3D drawing course", "10:07:23", 15, " A course that let you learn about fundamentals of 3D drawing ");;
         instance.setNumberOfSeats(NumberOfSeats);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+         int  expResult = 20;
+         int result = instance.getNumberOfSeats();
+          assertEquals(expResult, result);
     }
 
     /**
