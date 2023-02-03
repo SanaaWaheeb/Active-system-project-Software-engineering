@@ -75,7 +75,7 @@ public class EventTest {
     //Waad
     public void testGetNumberOfSeats() {
         System.out.println("getNumberOfSeats");
-        Event instance =new Event("protect your information ", "04:05:23", 30, " Lecture about how to be safe while doing online meetings ");;
+        Event instance =new Event("protect your information ", "04:05:23", 30, " Lecture about how to be safe while doing online meetings ");
         int expResult = 30;
         int result = instance.getNumberOfSeats();
         assertEquals(expResult, result);
@@ -89,12 +89,10 @@ public class EventTest {
     //Taghreed
     public void testGetDescriptionOfEvent() {
         System.out.println("getDescriptionOfEvent");
-        Event instance = null;
-        String expResult = "";
+        Event instance = new Event("How to create a database", "03:08:23", 20, " A lab teaches the basics and methods of creating DB in a correct way ");;
+        String expResult = " A lab teaches the basics and methods of creating DB in a correct way ";
         String result = instance.getDescriptionOfEvent();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
     }
 
     /**
@@ -149,7 +147,7 @@ public class EventTest {
     public void testSetNumberOfSeats() {
         System.out.println("setNumberOfSeats");
         int NumberOfSeats = 20;
-        Event instance = new Event("3D drawing course", "10:07:23", 15, " A course that let you learn about fundamentals of 3D drawing ");;
+        Event instance = new Event("3D drawing course", "10:07:23", 15, " A course that let you learn about fundamentals of 3D drawing ");
         instance.setNumberOfSeats(NumberOfSeats);
          int  expResult = 20;
          int result = instance.getNumberOfSeats();
@@ -163,11 +161,13 @@ public class EventTest {
     //Taghreed
     public void testSetDescriptionOfEvent() {
         System.out.println("setDescriptionOfEvent");
-        String descriptionOfEvent = "";
-        Event instance = null;
+        String descriptionOfEvent = " Lecture on an overview of IT disciplines in a simplified manner ";
+        Event instance = new Event("introduction to IT", "20:10:23", 35, " Lecture on an overview of CS disciplines in a simplified manner ");
         instance.setDescriptionOfEvent(descriptionOfEvent);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        String expResult = " Lecture on an overview of IT disciplines in a simplified manner ";
+        String result = instance.getDescriptionOfEvent();
+        assertEquals(expResult, result);
+        
     }
 
     /**
