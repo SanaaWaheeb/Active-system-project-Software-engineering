@@ -60,12 +60,11 @@ public class EventTest {
     //Ftoon
     public void testGetDate() {
         System.out.println("getDate");
-        Event instance = null;
-        String expResult = "";
+        Event instance =new Event("Crochet workshop", "02:07:23", 20, "Workshop about learning the basic Crochet ");
+        String expResult = "02:07:23";
         String result = instance.getDate();
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -132,11 +131,13 @@ public class EventTest {
     //ftoon
     public void testSetDate() {
         System.out.println("setDate");
-        String date = "";
-        Event instance = null;
+        String date = "13:03:23";
+        Event instance = new Event("Graphics design","15:03:23",20,"Graphics design is a visual workout that is designed to increase your creativity");
         instance.setDate(date);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+         String expResult = "13:03:23";
+         String result = instance.getDate();
+         assertEquals(expResult, result);
+   
     }
 
     /**
@@ -179,8 +180,7 @@ public class EventTest {
         System.out.println("setEvents");
         ArrayList<Event> EventsAdded = null;
         Event.setEvents(EventsAdded);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+      
     }
 
     /**
@@ -194,8 +194,7 @@ public class EventTest {
         String expResult = "";
         String result = Event.addNewEvent(newEventAdded);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -209,8 +208,7 @@ public class EventTest {
         String expResult = "";
         String result = Event.deleteEvent(EventName);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+
     }
 
     /**
@@ -224,8 +222,7 @@ public class EventTest {
         Event expResult = null;
         Event result = Event.searchEvent(search1);
         assertEquals(expResult, result);
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
 
     /**
@@ -236,8 +233,7 @@ public class EventTest {
     public void testShowEvent() {
         System.out.println("showEvent");
         Event.showEvent();
-        // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+       
     }
     
 }
