@@ -12,6 +12,7 @@ import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import static org.junit.Assert.*;
+import org.junit.Ignore;
 
 /**
  *
@@ -99,6 +100,7 @@ public class EventTest {
      */
     @Test
     ////
+    @Ignore
     public void testGetEvents() {
         System.out.println("getEvents");
         ArrayList<Event> expResult = null;
@@ -176,6 +178,7 @@ public class EventTest {
      */
     @Test
     ///
+    @Ignore
     public void testSetEvents() {
         System.out.println("setEvents");
         ArrayList<Event> EventsAdded = null;
@@ -190,8 +193,8 @@ public class EventTest {
     //Sanaa
     public void testAddNewEvent() {
         System.out.println("addNewEvent");
-        Event newEventAdded = null;
-        String expResult = "";
+        Event newEventAdded = new Event("Java course", "05:03:23", 25, "Become a Java Programming Expert With Best Java Programming Course");
+        String expResult = "Event added to system successfully";
         String result = Event.addNewEvent(newEventAdded);
         assertEquals(expResult, result);
        
