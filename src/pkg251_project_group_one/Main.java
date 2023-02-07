@@ -27,6 +27,8 @@ public class Main {
 
         //Create scanner and Read user choice
         Scanner input = new Scanner(System.in);
+        Scanner input_event = new Scanner(System.in);
+        Scanner input_name = new Scanner(System.in);
         int choice = input.nextInt();
         if (choice == 1) { //if leader
             System.out.print("Enter User Name: "); // leader username
@@ -58,13 +60,13 @@ public class Main {
                         case 1:
                         //add event
                             System.out.print("Enter Event Name: ");
-                            String eventName = input.next();
+                            String eventName = input_name.nextLine();
                             System.out.print("Enter Date of Event in format 'DD:MM:YY': ");
                             String dateOfEvent = input.next();
                             System.out.print("Enter Number Of Seats: ");
                             int numberOfSeats = input.nextInt();
                             System.out.print("Enter Description Of Event: ");
-                            String descriptionOfEvent = input.next();
+                            String descriptionOfEvent = input_event.nextLine();
                             Event eventAdded = new Event(eventName,dateOfEvent,numberOfSeats,descriptionOfEvent);
                             // add event to system 
                             System.out.println(Event.addNewEvent(eventAdded));
@@ -73,7 +75,7 @@ public class Main {
                         case 2:
                         //we call method delete event
                             System.out.print("Enter Event Name to delete it: ");
-                            System.out.println(Event.deleteEvent(input.next()));
+                            System.out.println(Event.deleteEvent(input_name.nextLine()));
                             break;
                         case 3:
                         //we call method show event
@@ -82,7 +84,7 @@ public class Main {
                         case 4:
                         //Search for Event
                             System.out.print("Enter Event name: ");
-                            String nameOfEvent = input.next();
+                            String nameOfEvent = input_name.nextLine();
                             //search about event using name of event
                             Event eventsearched = Event.searchEvent(nameOfEvent);
                             //if the event dose not exit 
