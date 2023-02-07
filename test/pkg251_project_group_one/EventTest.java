@@ -207,12 +207,23 @@ public class EventTest {
     //Taghreed
     public void testDeleteEvent() {
         System.out.println("deleteEvent");
-        String EventName = "";
-        String expResult = "";
+        Event instance = new Event("it", "20:10:23", 35, " Lecture on an overview of CS disciplines in a simplified manner ");
+        Event.addNewEvent(instance);
+        String EventName = instance.getEventName();
+        String expResult = "Event delete from system successfully";
         String result = Event.deleteEvent(EventName);
         assertEquals(expResult, result);
-
     }
+    @Test (expected = NullPointerException.class)
+    public void testDeleteEvent2() {
+        System.out.println("deleteEventIfNull");
+        Event instance = null;
+        String EventName = instance.getEventName();
+        String result = Event.deleteEvent(EventName);
+    }
+    
+    
+    
 
     /**
      * Test of searchEvent method, of class Event.
