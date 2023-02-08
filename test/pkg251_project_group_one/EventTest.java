@@ -220,6 +220,7 @@ public class EventTest {
         Event instance = null;
         String EventName = instance.getEventName();
         String result = Event.deleteEvent(EventName);
+        
     }
     
     
@@ -232,12 +233,27 @@ public class EventTest {
     //Waad
     public void testSearchEvent() {
         System.out.println("searchEvent");
-        String search1 = "";
-        Event expResult = null;
+        String search1 = "Key To Entrepreneurs";
+         Event instance = new Event("Key To Entrepreneurs", "24:10:23", 35, " Lecture on hoe to succeed in entrepreneursship ");
+         Event.addNewEvent(instance);
         Event result = Event.searchEvent(search1);
+        Event expResult =  instance;
         assertEquals(expResult, result);
        
     }
+   @Test  
+    public void testSearchEvent2() {
+        System.out.println("searchEventIfNull");
+         String search1 = "fun day ";
+        Event instance =  new Event("fun day ", "26:10:23", 35, " student do whatever activities they want  ");
+         Event expResult =  null;
+        Event result = Event.searchEvent(search1);
+         assertEquals(expResult, result);
+    }
+    
+    
+    
+    
 
     /**
      * Test of showEvent method, of class Event.
